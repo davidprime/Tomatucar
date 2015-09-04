@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+	<title>Registro de auto</title>
+	 <!-- Estilos CSS vinculados -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+	<link href="css/estilo.css" rel="stylesheet">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap-slider.css" rel="stylesheet">
+    <link href="css/botonesradio.css" rel="stylesheet"> 
+</head>
+
+<body class="body">
+<!--aqui comienza el header de la pagina-->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a id="logo" class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Vuelve al inicio" class="img-rounded" width="180px" height="40px"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+          	 <li><a href="patrocinador.html">!Gana dinero ya!</a></li>
+          	 <li id="activo"><a href="aviso.html"><strong>RENTAR MI VEHÍCULO</strong></a></li> 
+             <li class="dropdown">
+             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">¿Cómo funciona?<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="propietario.html"><span class="glyphicon glyphicon-list-alt"></span> Para propietario</a></li>
+                <li><a href="arrendador.html"><span class="glyphicon glyphicon-list-alt"></span> Para arrendador</a></li>
+                <li><a href="preguntasf.html"><span class="glyphicon glyphicon-wrench"></span> ¿Ayuda?</a></li> 
+              </ul></li>
+            <li><a href="registro.html"><span class="glyphicon glyphicon-user"></span> Registrarse</a></li>
+            <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Conectarse</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div><!--aqui termina el container del nav -->
+    </nav><!--aqui termina el nav completo -->
+
+
+<!--aqui termina el header de la pagina-->
+
+<!--comienza el contenido-->
+<div class="container">
+				<h2 class="text-center"><strong class="verdeTitulo">Registra tu auto es muy facil solo completa los pasos</strong></h2>
+<div id="contenidoauto">
+	<div class="panel-body">
+				
+				<p class="tituloscaja"><a href="#" id="mostrar">Paso 1. ¿Qué tipo de coche tienes? </a></p>
+				
+				<div id="caja">
+				<a href="#" class="close">[Reducir]</a>
+				<br>
+				<h5 class="titulos"><span>Marca y modelo:</span></h5 >
+				
+				<select id="marca" class="form-control" placeholder="Modelo">
+					  <option value='0'disabled selected style='display:none;'>Marca</option>	
+					  <option value='1'>Acura</option>
+					  <option value='2'>Cadillac</option>
+					  <option value='3'>Porsche</option>
+					  <option value='4'>Jeep</option>
+				</select>
+
+				<select id="modelo" class="form-control">
+					 <option value=''disabled selected style='display:none;'>Modelo</option>	
+					  <option>X5</option>
+					  <option>Crv</option>
+					  <option>Q7</option>
+					  <option>Carrera 3</option>
+				</select>
+				<hr class="hr2">
+				<h4 class="titulos"><span >Tipo de coche:</span></h4>
+
+				<form id="tipoAuto" role="form">
+
+				<div id="radios2">
+				<input type="radio" id="hinnerk1" value="compacto" name="group2" class="{src:'img/compacto1.png',checked:'img/compacto3.png',hover:'img/compacto2.png'}" style="display:none" /> 
+
+				<input type="radio" id="hinnerk2" value="sedan" name="group2" class="{src:'img/sedan1.png',checked:'img/sedan3.png',hover:'img/sedan2.png'}" style="display:none" /> 
+
+				<input type="radio" id="hinnerk3" value="convertible" name="group2" class="{src:'img/convertible1.png',checked:'img/convertible3.png',hover:'img/convertible2.png'}" style="display:none" />
+
+				<input type="radio" id="hinnerk4" value="familiar" name="group2" class="{src:'img/familiar1.png',checked:'img/familiar3.png',hover:'img/familiar2.png'}" style="display:none" />  
+
+				<br>
+				<br>
+				<input type="radio" id="hinnerk5" value="pickup" name="group2" class="{src:'img/pickup1.png',checked:'img/pickup3.png',hover:'img/pickup2.png'}" style="display:none" /> 
+
+				<input type="radio" id="hinnerk6" value="todoTerreno" name="group2" class="{src:'img/todoterreno1.png',checked:'img/todoterreno3.png',hover:'img/todoterreno2.png'}" style="display:none" /> 
+
+				<input type="radio" id="hinnerk7" value="minivan" name="group2" class="{src:'img/minivan1.png',checked:'img/minivan3.png',hover:'img/minivan2.png'}" style="display:none" /> 
+
+				<input type="radio" id="hinnerk8" value="furgoneta" name="group2" class="{src:'img/furgoneta1.png',checked:'img/furgoneta3.png',hover:'img/furgoneta2.png'}" style="display:none" /> 
+
+				<br>
+				<br>
+				<div id="centrado">
+				<input type="radio" id="hinnerk9" value="clasico" name="group2" class="{src:'img/clasico1.png',checked:'img/clasico3.png',hover:'img/clasico2.png'}" style="display:none" /> 
+
+				<input type="radio" id="hinnerk10" value="deportivo" name="group2" class="{src:'img/deportivo1.png',checked:'img/deportivo3.png',hover:'img/deportivo2.png'}" style="display:none" /> 
+
+				<input type="radio" id="hinnerk11" value="otro" name="group2" class="{src:'img/otros1.png',checked:'img/otros3.png',hover:'img/otros2.png'}" style="display:none" /> 
+				</div>
+				</div>
+
+				</form>
+				</div>  <!-- Div de la primera caja 1 -->				
+
+				<p class="tituloscaja"><a href="#" id="mostrar2">Paso 2. ¿Cúales son las caracteristicas de tu coche?</a></p>
+
+				<div id="caja2">
+				<a href="#" class="close">[Reducir]</a>
+				<br>
+				<h4 class="titulos"><span >Caracteristicas de tu coche:</span></h4>
+				<div id="anio">
+				<select id="primerAnio" class="form-control">
+					  <option value='0'disabled selected style='display:none;'>Primer año de cicrulación</option>	
+					  <option value='1'>1945</option>
+					  <option value='2'>1946</option>
+					  <option value='3'>1947</option>
+					  <option value='4'>1948</option>
+					  <option value='5'>1949</option>
+
+				</select>
+				<br>
+				</div>
+				<hr class="hr2">
+
+				<h4 class="titulos"><span >Caracteristicas generales:</span></h4>
+				<div id="Cgenerales">
+				<select  id="Nplazas" class="form-control">
+					  <option value='0'disabled selected style='display:none;'>Número de plazas</option>	
+					  <option value='1'>2</option>
+					  <option value='2'>3</option>
+					  <option value='3'>4</option>
+					  <option value='4'>5</option>
+                      <option value='6'>6</option>
+					  <option value='7'>7</option>
+					  <option value='8'>8</option>
+					  <option value='9'>9 y más</option>
+
+				</select>
+
+				<select  id="energia" class="form-control">
+					  <option value='0'disabled selected style='display:none;'>Energia</option>	
+					  <option value='1'>Magna</option>
+					  <option value='2'>Diesel</option>
+					  <option value='3'>Premium</option>
+					  <option value='4'>GasLP</option>
+					  <option value='4'>Electico</option>
+					  <option value='4'>Híbrido</option>
+
+				</select>
+
+				<select  id="km" class="form-control">
+					  <option value='0'disabled selected style='display:none;'>Kilometros</option>	
+					  <option value='1'>0 - 25,000 km</option>
+					  <option value='2'>25,000 - 50,000 km</option>
+					  <option value='3'>50,000 - 100,000 km</option>
+					  <option value='3'>100,000 - 150,000 km</option>
+					  <option value='3'>150,000 - 200,000 km</option>
+					  <option value='3'>200,000 km y más</option>
+
+				</select>
+
+				<select  id="consumo" class="form-control">
+					  <option value='0'disabled selected style='display:none;'>Consumo</option>	
+					  <option value='1'>1 Litro / 100 Km</option>
+					  <option value='2'>2 Litros / 100 Km</option>
+					  <option value='3'>3 Litros / 100 Km</option>
+					  <option value='4'>4 Litros / 100 Km</option>
+					  <option value='5'>20 Litros / 100 Km y más</option>
+
+
+				</select>
+				</div>
+
+				<div id="Cgenerales2">
+				<select  id="Npuertas" class="form-control">
+					  <option value='0'disabled selected style='display:none;'>Número de puertas</option>	
+					  <option value='1'>2</option>
+					  <option value='2'>3</option>
+					  <option value='3'>4</option>
+					  <option value='4'>5</option>
+					  <option value='5'>6</option>
+					  <option value='6'>7 y más</option>
+					 
+
+				</select>
+
+				<select  id="transimicion" class="form-control">
+					  <option value='0'disabled selected style='display:none;'>Transmicion</option>	
+					  <option value='1'>Manual</option>
+					  <option value='2'>Automático</option>
+					 
+				</select>
+
+				<select  id="potencia" class="form-control">
+					  <option value='0'disabled selected style='display:none;'>Potencia CV</option>	
+					  <option value='1'>1 CV </option>
+					  <option value='2'>2 CV </option>
+					  <option value='3'>3 CV </option>
+					  <option value='4'>4 CV </option>
+					  <option value='5'>5 CV </option>
+					  <option value='6'>20 CV  y más</option>
+				</select>
+
+				</div>
+				<hr class="hr2">
+
+				<h4 class="titulos"><span >Caracteristicas especiales DF:</span></h4>
+			
+	
+
+				<div id="df">
+				<select  id="tengomado" class="form-control">
+					  <option value='0'disabled selected style='display:none;'>Tipo de engomado</option>	
+					  <option value='1'>Exento</option>
+					  <option value='2'>00</option>
+					  <option value='3'>0</option>
+					  <option value='4'>1</option>
+					  <option value='5'>2</option>
+				</select>
+
+				<select  id="engomado" class="form-control">
+					  <option value='0'disabled selected style='display:none;'>Color de engomado</option>	
+					  <option value='1'>Amarillo</option>
+					  <option value='2'>Rosa</option>
+					  <option value='3'>Rojo</option>
+					  <option value='4'>Verde</option>
+					  <option value='5'>Azul</option>
+				</select>
+				
+				<select  id="terminoplacas" class="form-control">
+					  <option value='-1'disabled selected style='display:none;'>Terminacion de placas</option>
+					  <option value='0'>0</option>	
+					  <option value='1'>1</option>
+					  <option value='2'>2</option>
+					  <option value='3'>3</option>
+					  <option value='4'>4</option>
+					  <option value='5'>5</option>
+					  <option value='6'>6</option>
+					  <option value='7'>7</option>
+					  <option value='8'>8</option>
+					  <option value='9'>9</option>
+				</select>
+				</div>
+
+				<hr class="hr2">
+				<h4 class="titulos"><span >Opciones y accesorios:</span></h4>
+				<form id="caracteristicasAuto" role="form">
+				<div id="bradios">
+					<input type="checkbox" name="clima" id="Rclima" class="css-checkbox" /><label for="Rclima" class="css-label radGroup2">Aire acondicionado</label>
+					<input type="checkbox" name="direccion" id="Rdireccion" class="css-checkbox" /><label for="Rdireccion" class="css-label radGroup2">Direccion asistida</label>
+					<input type="checkbox" name="velocidad" id="Rvelocidad" class="css-checkbox" /><label for="Rvelocidad" class="css-label radGroup2">Regulador de velocidad</label>
+					<input type="checkbox" name="gps" id="Rgps" class="css-checkbox" /><label for="Rgps" class="css-label radGroup2">GPS</label>
+				</div>
+				<div id="bradios2">
+					<input type="checkbox" name="sillabb" id="sbb" class="css-checkbox" /><label for="sbb" class="css-label radGroup2">Sillitas niño</label>
+					<input type="checkbox" name="CD" id="lcd" class="css-checkbox" /><label for="lcd" class="css-label radGroup2">Lector de CD</label>
+					<input type="checkbox" name="Eaudio" id="audio" class="css-checkbox" /><label for="audio" class="css-label radGroup2">Entrada de audio</label>
+					<input type="checkbox" name="remolque" id="remol" class="css-checkbox" /><label for="remol" class="css-label radGroup2">
+					Enganche remolque</label>
+				</div>
+
+				<div id="bradios3">
+					<input type="checkbox" name="idioma3" id="ingles" class="css-checkbox" /><label for="ingles" class="css-label radGroup2">Remolque</label>
+					<input type="checkbox" name="idioma2" id="espanol" class="css-checkbox" /><label for="espanol" class="css-label radGroup2">Permite fumar</label>
+					<input type="checkbox" name="idioma3" id="frances" class="css-checkbox" /><label for="frances" class="css-label radGroup2">Permite mascota</label>
+				</div>		
+				</form>	
+				<hr class="hr2">
+				<h4 class="titulos"><span >Descripcion personal del coche:</span></h4>
+				<br>	
+				<textarea name="descripcioncoche" id="dcoche" class="form-control" rows="5" required></textarea>
+				<br>
+				<div class="alert alert-info"><strong>¡Bien hecho!</strong>  has completado el paso dos. </div>
+				</div><!-- termina div de la caja 2-->
+
+				<p class="tituloscaja"><a href="#" id="mostrar3">Paso 3. Arma tu renta</a></p>
+				
+				<div id="caja3">
+				<a href="#" class="close">[Reducir]</a>
+				<br>
+				<h4 class="titulos"><span>Direccion de tu coche:</span></h4>
+				<br>
+			    <form id="mapa">
+						<div class="form-group">
+						<div id="bbuscarD" class="input-group">
+						<input type="text" class="form-control" name="direccion" id="geocomplete" placeholder="Ingresa la direccion de tu auto" required>
+						<span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+						</div>
+		                </div>	
+			     
+			    </form>
+
+			    <div class="section" id="detallesD"> 
+			    <h3 id="direccionC" class="titulos"><span>Esta es tu direccion</span></h3>
+			      <ul>
+			        <li>Calle: <span data-geo="route"></span></li>
+			        <li>Numero: <span data-geo="street_number"></span></li>
+			        <li>Codigo postal: <span data-geo="postal_code"></span></li>
+			        <li>Locaidad: <span data-geo="locality"></span></li>
+			        <li>Pais: <span data-geo="country_short"></span></li>
+			        <li>Estado: <span data-geo="administrative_area_level_1"></span></li>
+			      </ul>
+				</div>
+
+			    <div class="map_canvas" style="width:539px; height:300px; "></div>
+			    <br>
+
+			    <hr class="hr2">
+			    <h4 class="titulos"><span>Precio de renta del coche:</span></h4>
+				<div id="controlradios">
+			    <div  class="list-group">
+				<h4 class="titulos" class="text-left"><p>Primer dia de renta: <span id="ex4CurrentSliderValLabel" ><span id="valrenta1" ></span>$ pesos</span> </p></h4>
+				<input id="renta1" type="text" data-slider-min="1" data-slider-max="1000" data-slider-step="1" data-slider-value="1"/> 
+				<br>
+				<div  class="list-group">
+				<h4 class="titulos" class="text-left"><p>Segundo dia de renta: <span id="ex5CurrentSliderValLabel"><span id="valrenta2" >10</span>$ pesos</span> </p></h4>
+				<input id="renta2" type="text" data-slider-min="10" data-slider-max="2000" data-slider-step="10" data-slider-value="1"/> 
+				<div id="valor2">
+				<h1><span id="ex2CurrentSliderValLabel" > <span class="text-primary" id="resulTotal">0</span><span class="text-primary">$ pesos / Día </span><span class="verdeTitulo">(por 150km / Día).</span></h1>
+				</div>
+				</div>				
+				<h4 class="titulos" class="text-left"><p>Precio por Km: <span id="ex6CurrentSliderValLabel"><span id="valrentakm" >0</span>$ pesos</span></p></h4>
+				<input id="rentakm" type="text" data-slider-min="0.5" data-slider-max="100" data-slider-step="0.5" data-slider-value="0.5"/> 
+				</div>		
+				</div>	
+				<br>
+				 <hr class="hr2">
+					<h4 class="titulos"><span >Numero de telefono:</span></h4 >
+				<div class="form-group">
+						<div class="ultimo" class="input-group">
+						<input type="text" class="form-control" name="direccion" id="" placeholder="Ingresa tu numero de telefono" required>
+						
+						</div>
+		         </div>
+		         	
+
+					<h4 class="titulos"><span >Matricula de tu coche:</span></h4 >
+		         <div class="form-group">
+						<div class="ultimo" class="input-group">
+						<input type="text" class="form-control" name="direccion" id="" placeholder="Ingresa la matricula de tu coche" required>
+						
+						</div>
+		         </div>	
+		         <br>
+				</div><!-- termina div de la caja 3-->
+				
+				<div id="bregistroV" ><input type="submit" value="Validar inscripción del vehículo" class="btn btn-primary btn-lg pull-right" ></div>
+					
+			</div><!-- termina panel body-->
+</div><!-- termina panel panel-default-->
+</div><!--termina div de container-->
+<br>
+<br>	
+
+<div class="bandaAzul">
+  <div class="container">
+      <ul class="listaV">
+        <li id="primero"><a href="porqueTomatucar.html">¿Por qué TomatuCAR?</a></li>
+        <li><a href="contratoR.html">Contrato de renta</a></li>
+        <li><a href="tcondiciones.html">Términos y condiciones</a></li>
+        <li><a href="preguntasf.html">F.A.Q.</a></li>
+        <li><a href="contacto.html">Contáctanos</a></li>
+        </ul>
+      <div id="redesS">
+        <ul>
+        <li><a href=""><img src="img/facebook.png" height="20px" width="30px" alt=""></a></li>
+        <li><a href=""><img src="img/twiter.png" height="20px" width="30px" alt=""></a></li>
+        <li><a href=""><img src="img/google.png" height="20px" width="30px" alt=""></a></li>
+        </ul>
+      </div>  
+  </div>  
+</div>
+
+<hr>
+
+<div class="container">
+    <footer>
+    
+    <div class="row">
+        <div class="col-md-3">
+      <a href="comunidad.html"><img class="center-block" src="img/ct.png" alt="..."></a> 
+          <h4 class="text-center" ><a href="comunidad.html"><p class="titulofooter"><strong>Comunidad TomatuCAR</strong></p></a></h4>
+          <p class="text-center" class="subtitulosfooter"><small>TomatuCAR relaciona a propietarios y arrendadores.</small> </p>
+          
+        </div>
+        <div class="col-md-3">
+           <a href="desarrollo.html"><img class="center-block" src="img/rs.png" alt="..."></a>  
+          <h4 class="text-center" ><a href="desarrollo.html"><p class="titulofooter"><strong>Reserva simplificada</strong></p></a></h4>
+          <p class="text-center" class="subtitulosfooter" ><small>Entra en contacto, reserva, haz una cita, toma las llaves del auto.</small></p>
+          
+       </div>
+         <div class="col-md-3">
+           <a href="seguro.html"><img class="center-block" src="img/sg.png" alt="..."></a>  
+          <h4 class="text-center" ><a href="seguro.html"><p class="titulofooter"><strong>Seguridad garantizada</strong></p></a></h4>
+          <p class="text-center" class="subtitulosfooter"><small>Incluyendo: Seguro de todo riesgo</small></p>
+
+       </div>
+
+         <div class="col-md-3">
+           <a href="pago.html"><img class="center-block" src="img/fs.png" alt="..."></a>  
+          <h4 class="text-center" ><a href="pago.html"><p class="titulofooter"><strong>Facturacion sin problemas</strong></p></a></h4>
+          <p class="text-center" class="subtitulosfooter"><small>No pago en efectivo, todas las transferencias son electrónicas y con la red TomatuCAR</small></p>
+
+       </div>
+      </div><!-- termina div del row 3 -->
+       </div><!-- termina div container parte 1 -->
+    
+      <hr>
+<div class="container">
+      <div class="row">
+         <div class="col-md-4">
+      <a href="propietario.html"><img class="center-block" src="img/ep.png" alt="..."></a> 
+         <h4 class="text-center" ><a href="propietario.html"><p class="titulofooter"><strong>¿Eres un propietario?</strong></p></a></h4>
+          <p class="text-center" class="subtitulosfooter"><small>¿Como rentar su auto a un particular? </small></p>
+          
+        </div>
+
+         <div class="col-md-4">
+      <a href="arrendador.html"><img class="center-block" src="img/ea.png" alt="..."></a> 
+         <h4 class="text-center" ><a href="arrendador.html"><p class="titulofooter"><strong>¿Eres un arrendador?</strong></p></a></h4>
+          <p class="text-center" class="subtitulosfooter"><small>¿Como rentar un auto a un particular? </small></p>
+          
+        </div>
+
+         <div class="col-md-4">
+      <a href="seguro.html"><img class="center-block" src="img/ser.png" alt="..."></a> 
+          <h4 class="text-center" ><a href="seguro.html"><p class="titulofooter"><strong>Nuestro Seguro, tu seguridad</strong></p></a></h4>
+          <p class="text-center" class="subtitulosfooter"> <small>¿Cómo estoy asugurado durante la renta?</small></p>
+        </div>
+    <hr>
+        </div> <!-- termina div del row 4 -->
+    </footer>
+  </div><!-- termina div del container parte 2 -->
+
+     
+	<!-- Js vinculados -->
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="js/responsive.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-1.3.1.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap-slider.js"></script>
+  <script type='text/javascript'>  
+ 		var $jq = jQuery.noConflict();  
+  </script>
+
+   <script type='text/javascript'>
+      $(document).ready(function() {// funcio para el primer input radius
+      
+      $jq("#renta1").slider(); //con este codigo creo un elemento de entrada
+      $jq("#renta1").on('slide', function(slideEvt) {
+        $jq("#valrenta1").text(slideEvt.value);
+      });     
+
+      });
+    </script>
+
+    <script type='text/javascript'>
+      $jq(document).ready(function() { //funcion para el 2° input radius
+        
+      
+      $jq("#renta2").slider();//con este codigo creo un elemento de entrada
+      $jq("#renta2").on('slide', function(slideEvt) { //con este codigo creo la funcion que va a responder a un evento
+        $jq("#valrenta2").text(slideEvt.value); //con este codigo muestro el valor en el label
+      });     
+
+      });
+    </script>
+
+    <script type='text/javascript'>
+      $jq(document).ready(function() { //funcion para el 2° input radius
+        
+      
+      $jq("#rentakm").slider();//con este codigo creo un elemento de entrada
+      $jq("#rentakm").on('slide', function(slideEvt) { //con este codigo creo la funcion que va a responder a un evento
+        $jq("#valrentakm").text(slideEvt.value); //con este codigo muestro el valor en el label
+      });     
+
+      });
+    </script>
+
+  <script type='text/javascript'>
+    	$jq(document).ready(function() {// funcio para el primer input radius
+
+    	var actualiza_precio = function() {
+	          $jq('#resulTotal').text(valorRenta1.getValue());
+	        }
+        
+        
+    	var valorRenta1 	= $jq("#renta1").slider().on('slide',actualiza_precio).data('slider');
+    	var valorRenta2		= $jq("#renta2").slider().on('slide',actualiza_precio).data('slider');
+    	var valorRentakm	= $jq("#rentakm").slider().on('slide',actualiza_precio).data('slider');
+
+
+			
+
+    	});
+    </script>
+
+  <script src="js/jquery-1.5.1.js"></script>
+  <script src="js/jquery.imageradio.js"></script>
+  <script src="js/jquery.geocomplete.min.js"></script>
+  <script src="js/jquery.geocomplete.js"></script>
+ 
+
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDnPDroLgoimf7Y6gJ3JHYrRPD7NwTxBIM&sensor=false&amp;libraries=places">
+      //este script hace una peticion al api de google para mostrar el mapa
+    </script>
+
+
+ <script  type="text/javascript">
+ $(document).ready(function(){
+
+      $(function(){
+        $("#geocomplete").geocomplete({
+          map: ".map_canvas",
+          zoom: 17,
+          location: "MX",
+          details: "#detallesD ul",
+          detailsAttribute: "data-geo"
+        });
+      
+         $(function(){
+        
+        var $geocomplete = $("#geocomplete"),
+          $multiple = $("#multiple");
+        
+        $geocomplete
+          .geocomplete({ map: ".map_canvas" })
+          .bind("geocode:multiple", function(event, results){
+            $.each(results, function(){
+              var result = this;
+              $("<li>")
+                .html(result.formatted_address)
+                .appendTo($multiple)
+                .click(function(){
+                  $geocomplete.geocomplete("update", result)
+                });
+            });
+          });
+        
+        $("#find").click(function(){
+          $("#geocomplete").trigger("geocode");
+        });
+        
+      });
+
+        
+        $("#find").click(function(){
+          $("#geocomplete").trigger("geocode");
+        });
+      });
+   
+ }); 
+</script>
+
+
+    
+<script type="text/javascript">
+		$(function(){
+
+		$("#mostrar").click(function(event) {
+		event.preventDefault();
+		$("#caja").slideToggle();
+		});
+
+		$("#caja a").click(function(event) {
+		event.preventDefault();
+		$("#caja").slideUp();
+		});
+	});
+</script>
+
+<script type="text/javascript">
+		$(function(){
+
+		$("#mostrar2").click(function(event) {
+		event.preventDefault();
+		$("#caja2").slideToggle();
+		});
+
+		$("#caja2 a").click(function(event) {
+		event.preventDefault();
+		$("#caja2").slideUp();
+		});
+	});
+</script>
+
+<script type="text/javascript">
+		$(function(){
+
+		$("#mostrar3").click(function(event) {
+		event.preventDefault();
+		$("#caja3").slideToggle();
+		});
+
+		$("#caja3 a").click(function(event) {
+		event.preventDefault();
+		$("#caja3").slideUp();
+		});		
+
+	});			
+</script>
+
+<script type="text/javascript"> 
+	$(document).ready(function(){
+    $('#radios1').imageradio({hidden: false});
+    $('#radios2').imageradio(); // hidden defaults to true
+    $('#radios3').imageradio(); // hidden defaults to true
+	}); 
+</script>
+</body>
+<hr>
+<div id="copy"><p class="text-center"><small>Copyright(c) 2014 TomatuCAR.com Todos  los derechos reservados</small></p></div>  <!-- termina div del copy -->
+</html>

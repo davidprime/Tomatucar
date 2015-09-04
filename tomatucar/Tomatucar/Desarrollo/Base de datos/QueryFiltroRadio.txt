@@ -1,0 +1,16 @@
+SELECT 
+	--CAMPOS QUE DESEE EL USUARIO
+	Nombre,Direccion,Latitude,Longitude,Horario,Referencia,Telefono,Foto, idCategoria,
+	
+	--:lat y :lng es la latitud y longitud que provee el usuarios
+	-- Latitude y Longitude son los valores que se encuentran en la base de datos
+	-- Para el caso de tomatucar Latitude sera Lat y Longitude sera Lng
+	 ( 3959 * acos( cos( radians(:lat) ) * cos( radians( Latitude ) ) * cos( radians( Longitude ) - radians(:lng) ) + sin( radians(:lat) ) * sin( radians( Latitude ) ) ) ) AS distance 
+FROM 
+	--nombre de la tabla
+	lugares 
+WHERE 
+	--filtros deseados mas el filtro del radio
+	--En este caso el 5 representa 5 millas, por lo que esta búsqueda 
+	--devuelve todos los campos que se encuentren dentro de 5 kilometros a la redonda
+	etiquetas LIKE :palabra HAVING distance < 5 ORDER BY distance

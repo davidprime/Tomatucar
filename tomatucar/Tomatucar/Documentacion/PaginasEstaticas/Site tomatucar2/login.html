@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Iniciar Sesion</title>
+
+<style>
+html{overflow-x:hidden;
+overflow-y:hidden;}    
+
+
+body{
+	margin: 0;
+	padding: 0;
+	background: #fff;
+
+	color: #fff;
+	font-family: Arial;
+	font-size: 12px;
+}
+
+.body{
+	position: fixed;
+	top: -20px;
+	left: -20px;
+	right: -40px;
+	bottom: -40px;
+	width: auto;
+	height: auto;
+	background-image: url("img/back.jpg");
+	background-size: cover;
+	-webkit-filter: blur(3px);
+
+	
+}
+
+.grad{
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -40px;
+	bottom: -40px;
+	width: auto;
+	height: auto;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+	
+	opacity: 0.7;
+}
+
+.header{
+	margin-left: -46px;
+	position: absolute;
+	top: calc(50% - 35px);
+	left: calc(50% - 255px);
+	
+}
+
+.header div{
+	float: left;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 35px;
+	font-weight: 200;
+}
+
+.header div span{
+	color: #5379fa !important; /*color de las letras azules*/
+}
+
+.login{
+	position: absolute;
+	top: calc(50% - 75px);
+	left: calc(50% - 50px);
+	height: 150px;
+	width: 350px;
+	padding: 10px;
+	
+}
+
+.login #mail{
+	width: 260px;
+	height: 30px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+}
+
+.login #pass{
+	width: 260px;
+	height: 30px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	margin-top: 10px;
+}
+
+.login #ingresar{
+	width: 260px;
+	height: 35px;
+	background: #428bca;
+	border: 1px solid #8DBDC8;
+	cursor: pointer;
+	border-radius: 2px;
+	color: #fff;
+	font-family: sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 6px;
+	margin-top: 3px;
+}
+
+.login #ingresar:hover{
+	opacity: 0.8;
+}
+
+.login #ingresar:active{
+	opacity: 0.6;
+}
+
+.login #mail:focus{
+	outline: none;
+	border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login #pass:focus{
+	outline: none;
+	border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login #ingresar:focus{
+	outline: none;
+}
+
+::-webkit-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+
+::-moz-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+
+#olvidar{
+	padding-top:2px;
+}
+</style>
+
+	<link href="css/estilo.css" rel="stylesheet">
+	<link href="css/bootstrap.css" rel="stylesheet">
+    <script src="js/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="body"></div>
+		<div class="grad"></div>
+		<div class="header">
+			<div>tomatuCAR<span>.com</span></div>
+		</div>
+		<br>
+		<div class="login">
+	<form action="">
+				<input id="mail" type="text" placeholder="ejemplo@tomatucar.com" name="user" requerid><br>
+				<input id="pass" type="password" placeholder="Contraseña" name="password" requerid><br>
+				
+				<div id="olvidar"><a href="#" data-toggle="modal" data-target="#t_and_c_m">¿Olvidaste tu contraseña?</a></div>
+									<div class="modal fade" id="t_and_c_m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<br>
+				<div class="alert alert-info"><h4 class="modal-title" id="myModalLabel">¿Deseas cambiar tu contraseña?</h4></div>
+			</div>
+			<div class="modal-body">
+			<form action="">
+			<div class="form-group">
+						<label class="verdeFuerte" for="InputName">Envianos tu correo:</label>
+						<div class="input-group">
+						<input type="text" class="form-control" name="apellido" id="InputName" placeholder="ejemplo@TomatuCAR.com" required>
+						<span class="input-group-addon"><span class="glyphicon glyphicon-wrench"></span></span>
+						</div><span class="help-block"><p class="text-left" class="verdeFuerte">No te preocupes, te enviaremos los pasos necesarios para restablecerla.</p></span>
+		     			</div>
+		   
+		     	<input  type="submit" name="submit" id="submit" value="enviar" class="btn btn-primary" data-dismiss="modal">
+	
+			</form>
+            
+			</div><!-- termina modal body-->
+			
+		</div><!-- /.modal-content -->
+		
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+				<input id="ingresar" type="submit" value="Ingresar">
+				</form>
+				<div id="enlases">
+					<a href="index.html">Volver al inicio</a>&nbsp;
+				 &nbsp;<a href="registro.html">Registrate ahora es gratis</a>
+			</div>
+
+		</div>
+		
+		
+  
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/responsive.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery-1.3.1.min.js"></script>
+    <script src="js/jquery.min.js"></script>			
+  	<script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
+
+</body>
+
+</html>

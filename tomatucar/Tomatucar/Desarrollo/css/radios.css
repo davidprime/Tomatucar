@@ -1,0 +1,25 @@
+.input_hidden {
+    position: absolute;
+    left: -9999px;
+}
+
+.selected {
+    background-color: #149BDF;
+    border-radius: 30px;
+}
+
+#radios2 label {
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+#radios2 label:hover {
+    background-color: #efefef;
+    border-radius: 30px;
+}
+
+#radios2 label img {
+    padding: 3px;
+    
+}
